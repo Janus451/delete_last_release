@@ -5,10 +5,10 @@ description: 'Delete the repositories last release'
 author: 'Janus451'
 inputs: 
   github_token: 
-    description: 'Take token from workplace environment $\{{ secrets.GITHUB_TOKEN }}'
+    description: 'Take token from workplace environment '
     required: true
   repository:
-    description: 'Specify to delete last release of other repository. Default is current repository (${GITHUB_REPOSITORY})'
+    description: 'Specify to delete last release of other repository. Default is current repository'
     default: ''
     required: false
 runs:
