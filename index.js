@@ -11,7 +11,7 @@ octokit.repos.getLatestRelease({ owner, repo }).then(response => {
         console.error('No release found. Cannot delete');
         return
     }
-    const release_id = reponse.data.release_id;
+    const release_id = response.data.release_id;
     octokit.repos.deleteRelease({ owner, repo, release_id });
 }).catch(error => {
     if (error.status === 404) {
