@@ -1,11 +1,18 @@
 # Delete last release
+
 ## Usage
 
-uses: Janus451/actions-delete_last_release@v1
-with: 
-  github_token: ${{ secrets.GITHUB_TOKEN}}
+Add folowing lines to your action.yml file to delete the repositories last release.
+
+### Example
+
+```yml
+uses: Janus451/delete_last_release@v1.5
+with:
+  github_token: ${{ secrets.GITHUB_TOKEN }}
+```
 
 ### Inputs
 
-github Token : ${{ secrets.GITHUB_TOKEN}}
-repository : Default current repository. 
+github_token : ${{ secrets.GITHUB_TOKEN }} \
+repository : ${ GITHUB_REPOSITORY } , Default =  current repository.
