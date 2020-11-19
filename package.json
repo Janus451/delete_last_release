@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Janus451/delete_last_release#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@actions/github": "^4.0.0"
+    "@actions/github": "^4.0.0",
+    "@octokit/rest": "^18.0.9"
   }
 }
