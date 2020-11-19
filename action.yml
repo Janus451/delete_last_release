@@ -1,0 +1,16 @@
+# https://help.github.com/en/articles/metadata-syntax-for-github-actions
+
+name: 'Delete last release'
+description: 'Delete the repositories last release'
+author: 'Janus451'
+inputs: 
+  github_token: 
+    description: 'Take token from workplace environment ${{ secrets.GITHUB_TOKEN }}'
+    required: true
+  repository:
+    description: 'Specify to delete last release of other repository. Default is current repository ${{ GITHUB_REPOSITORY }}'
+    default: ''
+    required: false
+runs:
+  using: 'node12'
+  main: 'index.js'
